@@ -4,4 +4,4 @@ for knittex
 
 #### License
 
-mit
+mit# knittex
