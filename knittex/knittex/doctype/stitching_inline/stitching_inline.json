@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-07-11 20:16:29.494532",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yfab",
+  "amended_from",
+  "date",
+  "cutting_receipt",
+  "naming_series",
+  "column_break_yemt",
+  "sales_order",
+  "cutting_slip",
+  "section_break_rbvc",
+  "stitching_inline_item",
+  "total_inline_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yfab",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stitching Inline",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "cutting_receipt.sales_order",
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "column_break_yemt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "cutting_receipt.cutting_slip",
+   "fieldname": "cutting_slip",
+   "fieldtype": "Link",
+   "label": "Cutting Slip",
+   "options": "Cutting Slip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_receipt",
+   "fieldtype": "Link",
+   "label": "Cutting Receipt",
+   "options": "Cutting Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rbvc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stitching_inline_item",
+   "fieldtype": "Table",
+   "label": "Stitching InLine Item",
+   "options": "Stitching Inline Item"
+  },
+  {
+   "fieldname": "total_inline_qty",
+   "fieldtype": "Float",
+   "label": "Total Inline Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SI-26-"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-23 15:05:28.552827",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Stitching Inline",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-11 20:21:36.878487",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article_no",
+  "style",
+  "sku",
+  "required_qty",
+  "previous_inline_qty",
+  "cutting_slip_no",
+  "motif_receipt_reference",
+  "column_break_foqs",
+  "bundle_no",
+  "qty_per_bundle",
+  "size",
+  "cut_qty",
+  "motif_qty",
+  "inline_qty",
+  "cutting_receipt_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_no",
+   "fieldtype": "Link",
+   "label": "Article No",
+   "options": "Article"
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "label": "Style"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "label": "SKU",
+   "options": "Item"
+  },
+  {
+   "fieldname": "required_qty",
+   "fieldtype": "Float",
+   "label": "Required Qty"
+  },
+  {
+   "fieldname": "column_break_foqs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bundle_no",
+   "fieldtype": "Data",
+   "label": "Bundle No"
+  },
+  {
+   "fieldname": "qty_per_bundle",
+   "fieldtype": "Float",
+   "label": "Qty Per Bundle"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "cut_qty",
+   "fieldtype": "Float",
+   "label": "Cut Qty"
+  },
+  {
+   "fieldname": "inline_qty",
+   "fieldtype": "Float",
+   "label": "InLine Qty"
+  },
+  {
+   "fieldname": "previous_inline_qty",
+   "fieldtype": "Float",
+   "label": "Previous InLine Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_receipt_no",
+   "fieldtype": "Link",
+   "label": "Cutting Receipt No",
+   "options": "Cutting Receipt",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "cutting_receipt_no.cutting_slip",
+   "fieldname": "cutting_slip_no",
+   "fieldtype": "Link",
+   "label": "Cutting Slip No",
+   "options": "Cutting Slip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "motif_receipt_reference",
+   "fieldtype": "Link",
+   "label": "Motif Receipt Reference",
+   "options": "Motif Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "motif_qty",
+   "fieldtype": "Float",
+   "label": "Motif Qty",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-21 02:29:38.736605",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Stitching Inline Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

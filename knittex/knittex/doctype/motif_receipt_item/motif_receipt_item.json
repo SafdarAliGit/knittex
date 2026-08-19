@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-20 17:45:06.237972",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article",
+  "style",
+  "sku",
+  "bundle_no",
+  "qty_per_bundle",
+  "column_break_olgj",
+  "motif_issue_qty",
+  "a_qty",
+  "b_qty",
+  "balance_qty",
+  "previous_receipt_qty",
+  "motif_slip_reference",
+  "cutting_receipt_reference",
+  "cutting_slip_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Article",
+   "read_only": 1
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Style",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "label": "SKU",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bundle_no",
+   "fieldtype": "Data",
+   "label": "Bundle No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty_per_bundle",
+   "fieldtype": "Float",
+   "label": "Qty Per Bundle"
+  },
+  {
+   "fieldname": "column_break_olgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "motif_issue_qty",
+   "fieldtype": "Float",
+   "label": "Motif Issue Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_receipt_qty",
+   "fieldtype": "Float",
+   "label": "Previous Receipt Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "motif_slip_reference",
+   "fieldtype": "Link",
+   "label": "Motif Slip Reference",
+   "options": "Motif Slip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_receipt_reference",
+   "fieldtype": "Link",
+   "label": "Cutting Receipt Reference",
+   "options": "Cutting Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_slip_reference",
+   "fieldtype": "Link",
+   "label": "Cutting Slip Reference",
+   "options": "Cutting Slip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "a_qty",
+   "fieldtype": "Float",
+   "label": "A Qty"
+  },
+  {
+   "fieldname": "b_qty",
+   "fieldtype": "Float",
+   "label": "B Qty"
+  },
+  {
+   "fieldname": "balance_qty",
+   "fieldtype": "Float",
+   "label": "Balance Qty",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-20 17:55:33.599728",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Motif Receipt Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

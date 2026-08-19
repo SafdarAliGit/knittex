@@ -1,0 +1,34 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"kb3XPLg8lb\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"t8v0UAnzMk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Sales</b></span>\",\"col\":3}},{\"id\":\"phNMWf54nI\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Purchase</b></span>\",\"col\":3}},{\"id\":\"opjQeqHQMB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>GRN</b></span>\",\"col\":3}},{\"id\":\"140PflQXur\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Cut To Pack</b></span>\",\"col\":3}},{\"id\":\"j95HEo_vht\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}},{\"id\":\"AALwofClfm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yarn Purchase Order\",\"col\":3}},{\"id\":\"gC5UdGO833\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yarn Receipt\",\"col\":3}},{\"id\":\"6ZmNKgODdS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cutting Slip\",\"col\":3}},{\"id\":\"-of6u89Xe8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"id\":\"Lw9Xr88q0E\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Knitting Order\",\"col\":3}},{\"id\":\"wcQ9QkcFq0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Knitting Receipt\",\"col\":3}},{\"id\":\"ez6afntZtU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cutting Receipt\",\"col\":3}},{\"id\":\"f-6e8Se4qT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"Fh9pGFXwWK\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dyeing Order\",\"col\":3}},{\"id\":\"4GGnVGdInE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Dyeing Receipt\",\"col\":3}},{\"id\":\"D2M6y84nVa\",\"type\":\"spacer\",\"data\":{\"col\":3}},{\"id\":\"Qg7b4YFtLL\",\"type\":\"spacer\",\"data\":{\"col\":3}},{\"id\":\"qQTUon8Djm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yarn Dyeing Order\",\"col\":3}},{\"id\":\"GLXzN4daX8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yarn Dyeing Receipt\",\"col\":3}},{\"id\":\"geM-SsNg9h\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stitching Inline\",\"col\":3}},{\"id\":\"cSp7wXXDc5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Motif Slip\",\"col\":3}},{\"id\":\"jIzm8DAuTo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Motif Receipt\",\"col\":3}},{\"id\":\"-mcys1svnd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stitching Offline\",\"col\":3}}]",
+ "creation": "2026-07-27 17:16:24.785127",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Live Monitor Dashboard"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Knittex Garments",
+ "links": [],
+ "modified": "2026-07-27 17:17:42.188915",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Knittex Garments",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [],
+ "title": "Knittex Garments"
+}

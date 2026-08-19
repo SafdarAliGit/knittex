@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-11 21:28:17.761554",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article_no",
+  "style",
+  "sku",
+  "required_by",
+  "inlined_qty",
+  "cutting_slip_no",
+  "previous_offline_qty",
+  "motif_receipt_reference",
+  "column_break_svrf",
+  "offline_qty",
+  "b_qty",
+  "bundle_no",
+  "qty_per_bundle",
+  "size",
+  "cut_qty",
+  "cutting_receipt_no",
+  "stitching_inline_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_no",
+   "fieldtype": "Link",
+   "label": "Article No",
+   "options": "Article",
+   "read_only": 1
+  },
+  {
+   "fieldname": "style",
+   "fieldtype": "Data",
+   "label": "Style",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "label": "SKU",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "required_by",
+   "fieldtype": "Float",
+   "label": "Required By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "inlined_qty",
+   "fieldtype": "Float",
+   "label": "InLined Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_slip_no",
+   "fieldtype": "Link",
+   "label": "Cutting Slip No",
+   "options": "Cutting Slip",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_svrf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bundle_no",
+   "fieldtype": "Data",
+   "label": "Bundle No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty_per_bundle",
+   "fieldtype": "Float",
+   "label": "Qty Per Bundle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cut_qty",
+   "fieldtype": "Float",
+   "label": "Cut Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_receipt_no",
+   "fieldtype": "Link",
+   "label": "Cutting Receipt No",
+   "options": "Cutting Receipt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stitching_inline_no",
+   "fieldtype": "Link",
+   "label": "Stitching InLine No",
+   "options": "Stitching Inline"
+  },
+  {
+   "fieldname": "offline_qty",
+   "fieldtype": "Float",
+   "label": "Offline Qty"
+  },
+  {
+   "fieldname": "b_qty",
+   "fieldtype": "Float",
+   "label": "B Qty"
+  },
+  {
+   "fieldname": "previous_offline_qty",
+   "fieldtype": "Float",
+   "label": "Previous Offline Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "motif_receipt_reference",
+   "fieldtype": "Link",
+   "label": "Motif Receipt Reference",
+   "options": "Motif Receipt",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-21 21:23:42.871490",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Stitching Offline Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

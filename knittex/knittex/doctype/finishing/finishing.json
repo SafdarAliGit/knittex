@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FIN-26-{####}",
+ "creation": "2026-07-16 18:18:35.412865",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yyo4",
+  "amended_from",
+  "date",
+  "article_no",
+  "style",
+  "inquiry_cost_sheet",
+  "column_break_kldf",
+  "sales_order",
+  "contractor",
+  "article_qty",
+  "section_break_vkws",
+  "finishing_item",
+  "total_finish_qty",
+  "section_break_uhea",
+  "finishing_leftover",
+  "section_break_abhf",
+  "finishing_accessories",
+  "custom_sku_consumption_json"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yyo4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Finishing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_kldf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "link_filters": "[[\"Supplier\",\"supplier_group\",\"=\",\"Contractor\"]]",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "sales_order.total_qty",
+   "fieldname": "article_qty",
+   "fieldtype": "Float",
+   "label": "Article Qty"
+  },
+  {
+   "fieldname": "inquiry_cost_sheet",
+   "fieldtype": "Link",
+   "label": "Inquiry Cost Sheet",
+   "link_filters": "[[\"Inquiry Cost Sheet Garment\",\"is_active\",\"=\",1]]",
+   "options": "Inquiry Cost Sheet Garment"
+  },
+  {
+   "fetch_from": "article_no.style",
+   "fieldname": "style",
+   "fieldtype": "Link",
+   "label": "Style",
+   "options": "Style"
+  },
+  {
+   "fieldname": "section_break_vkws",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "finishing_item",
+   "fieldtype": "Table",
+   "label": "Finishing Item",
+   "options": "Finishing Item"
+  },
+  {
+   "fieldname": "section_break_abhf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "finishing_accessories",
+   "fieldtype": "Table",
+   "label": "Finishing Accessories",
+   "options": "Finishing Accessories"
+  },
+  {
+   "fetch_from": "sales_order.custom_article_no",
+   "fieldname": "article_no",
+   "fieldtype": "Link",
+   "label": "Article No",
+   "options": "Article"
+  },
+  {
+   "fieldname": "total_finish_qty",
+   "fieldtype": "Float",
+   "label": "Total Finish Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_sku_consumption_json",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "SKU Consumption JSON",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_uhea",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "finishing_leftover",
+   "fieldtype": "Table",
+   "label": "Finishing Leftover",
+   "options": "Finishing Leftover"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Stock Entry",
+   "link_fieldname": "custom_finishing_reference"
+  }
+ ],
+ "modified": "2026-07-22 16:43:52.317854",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Finishing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

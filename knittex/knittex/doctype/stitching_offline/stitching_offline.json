@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SO-{YY}-{####}",
+ "creation": "2026-07-11 20:56:37.660503",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yyvu",
+  "amended_from",
+  "date",
+  "contractor",
+  "inquiry_cost_sheet",
+  "column_break_oick",
+  "sales_order",
+  "total_balance_qty",
+  "section_break_rfny",
+  "stitching_offline_item",
+  "total_offline_qty",
+  "section_break_nqiu",
+  "waste_items_stitching",
+  "section_break_jqpp",
+  "total_waste_qty",
+  "column_break_xnje",
+  "gross",
+  "section_break_pmfd",
+  "stitching_offline_process"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yyvu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stitching Offline",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_oick",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rfny",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stitching_offline_item",
+   "fieldtype": "Table",
+   "label": "Stitching Offline Item",
+   "options": "Stitching Offline Item"
+  },
+  {
+   "fieldname": "total_offline_qty",
+   "fieldtype": "Float",
+   "label": "Total Offline Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Contractor",
+   "link_filters": "[[\"Supplier\",\"supplier_group\",\"=\",\"Contractor\"]]",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "section_break_nqiu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_jqpp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_waste_qty",
+   "fieldtype": "Float",
+   "label": "Total Waste Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xnje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross",
+   "fieldtype": "Float",
+   "label": "Gross",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_balance_qty",
+   "fieldtype": "Float",
+   "label": "Total Balance Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "waste_items_stitching",
+   "fieldtype": "Table",
+   "label": "Waste Item",
+   "options": "Waste Items Stitching"
+  },
+  {
+   "fieldname": "section_break_pmfd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stitching_offline_process",
+   "fieldtype": "Table",
+   "label": "Stitching Offline Process",
+   "options": "Stitching Offline Process"
+  },
+  {
+   "fieldname": "inquiry_cost_sheet",
+   "fieldtype": "Link",
+   "label": "Inquiry Cost Sheet",
+   "options": "Inquiry Cost Sheet Garment",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Stock Entry",
+   "link_fieldname": "custom_stitching_offline_reference"
+  }
+ ],
+ "modified": "2026-08-01 01:40:06.329122",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Stitching Offline",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

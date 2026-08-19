@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-16 18:20:59.537477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sku",
+  "article",
+  "offlined_qty",
+  "previous_finish_qty",
+  "a_leftover",
+  "b_leftover",
+  "column_break_lbxj",
+  "finish_qty",
+  "size",
+  "required_sku_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "label": "SKU",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "offlined_qty",
+   "fieldtype": "Float",
+   "label": "Offlined Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lbxj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finish_qty",
+   "fieldtype": "Float",
+   "label": "Finish Qty"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "required_sku_qty",
+   "fieldtype": "Float",
+   "label": "Required SKU Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_finish_qty",
+   "fieldtype": "Float",
+   "label": "Previous Finish Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "a_leftover",
+   "fieldtype": "Float",
+   "label": "A Leftover"
+  },
+  {
+   "fieldname": "b_leftover",
+   "fieldtype": "Float",
+   "label": "B Leftover"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Article",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-18 15:01:35.679774",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Finishing Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

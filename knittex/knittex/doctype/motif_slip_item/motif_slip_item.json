@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 18:47:30.173858",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article",
+  "sku",
+  "size",
+  "bundle_no",
+  "qty_per_bundle",
+  "column_break_ulcw",
+  "motif_qty",
+  "previous_motif_qty",
+  "cutting_receipt_reference",
+  "cutting_slip_reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Article",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Link",
+   "label": "SKU",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Link",
+   "label": "Size",
+   "options": "Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bundle_no",
+   "fieldtype": "Data",
+   "label": "Bundle No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qty_per_bundle",
+   "fieldtype": "Float",
+   "label": "Qty Per Bundle",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ulcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "motif_qty",
+   "fieldtype": "Float",
+   "label": "Motif Qty"
+  },
+  {
+   "fieldname": "previous_motif_qty",
+   "fieldtype": "Float",
+   "label": "Previous Motif Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_receipt_reference",
+   "fieldtype": "Link",
+   "label": "Cutting Receipt Reference",
+   "options": "Cutting Receipt"
+  },
+  {
+   "fieldname": "cutting_slip_reference",
+   "fieldtype": "Link",
+   "label": "Cutting Slip Reference",
+   "options": "Cutting Slip"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-18 19:14:34.402542",
+ "modified_by": "Administrator",
+ "module": "Knittex",
+ "name": "Motif Slip Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
